@@ -9,16 +9,16 @@ public class Main {
         Libro libro1 = new Libro("Cien Años de Soledad", "Gabriel García Márquez", 5, 1);
 
         Libro libro2 = new Libro();
-        System.out.println("Ingrese título para libro2:");
+        System.out.println("Ingrese título para el libro 2:");
         libro2.setTitulo(scanner.nextLine());
 
-        System.out.println("Ingrese autor para libro2:");
+        System.out.println("Ingrese autor para el libro 2:");
         libro2.setAutor(scanner.nextLine());
 
-        System.out.println("Ingrese número de ejemplares para libro2:");
+        System.out.println("Ingrese número de ejemplares para el libro 2:");
         libro2.setNumeroEjemplares(leerEntero(scanner));
 
-        System.out.println("Ingrese número de ejemplares prestados para libro2:");
+        System.out.println("Ingrese número de ejemplares prestados para el libro 2:");
         libro2.setNumeroEjemplaresPrestados(leerEntero(scanner));
 
         LibroTextoUni libroTextoUni = new LibroTextoUni(
@@ -35,10 +35,10 @@ public class Main {
         System.out.println(novela);
 
         System.out.println("\n--- Pruebas de préstamo y devolución ---");
-        System.out.println("Préstamo libro1: " + libro1.prestamo());
-        System.out.println("Préstamo libro1: " + libro1.prestamo());
-        System.out.println("Devolución libro1: " + libro1.devolucion());
-        System.out.println("Estado final libro1: " + libro1);
+        System.out.println("Préstamo libro 1: " + libro1.prestamo());
+        System.out.println("Préstamo libro 1: " + libro1.prestamo());
+        System.out.println("Devolución libro 1: " + libro1.devolucion());
+        System.out.println("Estado final libro 1: " + libro1);
 
         scanner.close();
     }
